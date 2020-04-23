@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/starsh-constants.h
+
+../include/starsh-mpi-starpu.h
+
+../include/starsh-mpi.h
+
+../include/starsh-starpu.h
+
+../include/starsh.h
+sys/types.h
+-
+stdarg.h
+-
+starsh-constants.h
+../include/starsh-constants.h
+starsh-mpi.h
+../include/starsh-mpi.h
+starsh-starpu.h
+../include/starsh-starpu.h
+starsh-mpi-starpu.h
+../include/starsh-mpi-starpu.h
+
+/home/abdullsm/develop/stars-h/examples/problem/dense.c
+stdio.h
+-
+stdlib.h
+-
+starsh.h
+-
+

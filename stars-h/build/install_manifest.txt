@@ -1,0 +1,16 @@
+/home/abdullsm/develop/stars-h/build/install_dir/share/starsh/config.log
+/home/abdullsm/develop/stars-h/build/install_dir/lib/pkgconfig/starsh.pc
+/home/abdullsm/develop/stars-h/build/install_dir/lib/libstarsh.a
+/home/abdullsm/develop/stars-h/build/install_dir/include/starsh.h
+/home/abdullsm/develop/stars-h/build/install_dir/include/starsh-mpi.h
+/home/abdullsm/develop/stars-h/build/install_dir/include/starsh-starpu.h
+/home/abdullsm/develop/stars-h/build/install_dir/include/starsh-mpi-starpu.h
+/home/abdullsm/develop/stars-h/build/install_dir/include/starsh-spatial.h
+/home/abdullsm/develop/stars-h/build/install_dir/include/starsh-spatial-gsl.h
+/home/abdullsm/develop/stars-h/build/install_dir/include/starsh-electrostatics.h
+/home/abdullsm/develop/stars-h/build/install_dir/include/starsh-electrodynamics.h
+/home/abdullsm/develop/stars-h/build/install_dir/include/starsh-randtlr.h
+/home/abdullsm/develop/stars-h/build/install_dir/include/starsh-minimal.h
+/home/abdullsm/develop/stars-h/build/install_dir/include/starsh-constants.h
+/home/abdullsm/develop/stars-h/build/install_dir/include/starsh-particles.h
+/home/abdullsm/develop/stars-h/build/install_dir/include/starsh-cauchy.h

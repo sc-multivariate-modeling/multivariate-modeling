@@ -1,0 +1,1401 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_77349/fast"
+/usr/bin/make -f CMakeFiles/cmTC_77349.dir/build.make CMakeFiles/cmTC_77349.dir/build
+make[1]: Entering directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_77349.dir/CheckSymbolExists.c.o
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc    -o CMakeFiles/cmTC_77349.dir/CheckSymbolExists.c.o   -c /home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_77349
+/opt/ecrc/cmake/3.11.1/ub16/bin/cmake -E cmake_link_script CMakeFiles/cmTC_77349.dir/link.txt --verbose=1
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc      -rdynamic CMakeFiles/cmTC_77349.dir/CheckSymbolExists.c.o  -o cmTC_77349 
+CMakeFiles/cmTC_77349.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_77349.dir/build.make:86: recipe for target 'cmTC_77349' failed
+make[1]: *** [cmTC_77349] Error 1
+make[1]: Leaving directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_77349/fast' failed
+make: *** [cmTC_77349/fast] Error 2
+
+File /home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_06725/fast"
+/usr/bin/make -f CMakeFiles/cmTC_06725.dir/build.make CMakeFiles/cmTC_06725.dir/build
+make[1]: Entering directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_06725.dir/CheckFunctionExists.c.o
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_06725.dir/CheckFunctionExists.c.o   -c /opt/ecrc/cmake/3.11.1/ub16/share/cmake-3.11/Modules/CheckFunctionExists.c
+Linking C executable cmTC_06725
+/opt/ecrc/cmake/3.11.1/ub16/bin/cmake -E cmake_link_script CMakeFiles/cmTC_06725.dir/link.txt --verbose=1
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_06725.dir/CheckFunctionExists.c.o  -o cmTC_06725 -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_06725.dir/build.make:86: recipe for target 'cmTC_06725' failed
+make[1]: *** [cmTC_06725] Error 1
+make[1]: Leaving directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_06725/fast' failed
+make: *** [cmTC_06725/fast] Error 2
+
+
+Determining if the function CHEEV_ exists failed with the following output:
+Change Dir: /home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_b788b/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b788b.dir/build.make CMakeFiles/cmTC_b788b.dir/build
+make[1]: Entering directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b788b.dir/CheckFunctionExists.c.o
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc   -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -o CMakeFiles/cmTC_b788b.dir/CheckFunctionExists.c.o   -c /opt/ecrc/cmake/3.11.1/ub16/share/cmake-3.11/Modules/CheckFunctionExists.c
+Linking C executable cmTC_b788b
+/opt/ecrc/cmake/3.11.1/ub16/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b788b.dir/link.txt --verbose=1
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc  -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -Wl,--no-as-needed  -rdynamic CMakeFiles/cmTC_b788b.dir/CheckFunctionExists.c.o  -o cmTC_b788b -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lpthread -lm 
+CMakeFiles/cmTC_b788b.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `CHEEV_'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_b788b.dir/build.make:89: recipe for target 'cmTC_b788b' failed
+make[1]: *** [cmTC_b788b] Error 1
+make[1]: Leaving directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_b788b/fast' failed
+make: *** [cmTC_b788b/fast] Error 2
+
+
+Determining if the function CHEEV_ exists failed with the following output:
+Change Dir: /home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_84ee2/fast"
+/usr/bin/make -f CMakeFiles/cmTC_84ee2.dir/build.make CMakeFiles/cmTC_84ee2.dir/build
+make[1]: Entering directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_84ee2.dir/CheckFunctionExists.c.o
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc   -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -o CMakeFiles/cmTC_84ee2.dir/CheckFunctionExists.c.o   -c /opt/ecrc/cmake/3.11.1/ub16/share/cmake-3.11/Modules/CheckFunctionExists.c
+Linking C executable cmTC_84ee2
+/opt/ecrc/cmake/3.11.1/ub16/bin/cmake -E cmake_link_script CMakeFiles/cmTC_84ee2.dir/link.txt --verbose=1
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc  -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -Wl,--no-as-needed  -rdynamic CMakeFiles/cmTC_84ee2.dir/CheckFunctionExists.c.o  -o cmTC_84ee2 -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lpthread -lm 
+CMakeFiles/cmTC_84ee2.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `CHEEV_'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_84ee2.dir/build.make:89: recipe for target 'cmTC_84ee2' failed
+make[1]: *** [cmTC_84ee2] Error 1
+make[1]: Leaving directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_84ee2/fast' failed
+make: *** [cmTC_84ee2/fast] Error 2
+
+
+Determining if the function CHEEV_ exists failed with the following output:
+Change Dir: /home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_8464c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_8464c.dir/build.make CMakeFiles/cmTC_8464c.dir/build
+make[1]: Entering directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8464c.dir/CheckFunctionExists.c.o
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc   -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -o CMakeFiles/cmTC_8464c.dir/CheckFunctionExists.c.o   -c /opt/ecrc/cmake/3.11.1/ub16/share/cmake-3.11/Modules/CheckFunctionExists.c
+Linking C executable cmTC_8464c
+/opt/ecrc/cmake/3.11.1/ub16/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8464c.dir/link.txt --verbose=1
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc  -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -Wl,--no-as-needed  -rdynamic CMakeFiles/cmTC_8464c.dir/CheckFunctionExists.c.o  -o cmTC_8464c -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lpthread -lm 
+CMakeFiles/cmTC_8464c.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `CHEEV_'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_8464c.dir/build.make:89: recipe for target 'cmTC_8464c' failed
+make[1]: *** [cmTC_8464c] Error 1
+make[1]: Leaving directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_8464c/fast' failed
+make: *** [cmTC_8464c/fast] Error 2
+
+
+Determining if the function CHEEV_ exists failed with the following output:
+Change Dir: /home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_c3878/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c3878.dir/build.make CMakeFiles/cmTC_c3878.dir/build
+make[1]: Entering directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c3878.dir/CheckFunctionExists.c.o
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc   -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -o CMakeFiles/cmTC_c3878.dir/CheckFunctionExists.c.o   -c /opt/ecrc/cmake/3.11.1/ub16/share/cmake-3.11/Modules/CheckFunctionExists.c
+Linking C executable cmTC_c3878
+/opt/ecrc/cmake/3.11.1/ub16/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c3878.dir/link.txt --verbose=1
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc  -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -Wl,--no-as-needed  -rdynamic CMakeFiles/cmTC_c3878.dir/CheckFunctionExists.c.o  -o cmTC_c3878 -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lpthread -lm 
+CMakeFiles/cmTC_c3878.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `CHEEV_'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_c3878.dir/build.make:89: recipe for target 'cmTC_c3878' failed
+make[1]: *** [cmTC_c3878] Error 1
+make[1]: Leaving directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_c3878/fast' failed
+make: *** [cmTC_c3878/fast] Error 2
+
+
+Determining if the function CHEEV_ exists failed with the following output:
+Change Dir: /home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_d9a6e/fast"
+/usr/bin/make -f CMakeFiles/cmTC_d9a6e.dir/build.make CMakeFiles/cmTC_d9a6e.dir/build
+make[1]: Entering directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d9a6e.dir/CheckFunctionExists.c.o
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc   -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -o CMakeFiles/cmTC_d9a6e.dir/CheckFunctionExists.c.o   -c /opt/ecrc/cmake/3.11.1/ub16/share/cmake-3.11/Modules/CheckFunctionExists.c
+Linking C executable cmTC_d9a6e
+/opt/ecrc/cmake/3.11.1/ub16/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d9a6e.dir/link.txt --verbose=1
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc  -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -Wl,--no-as-needed  -rdynamic CMakeFiles/cmTC_d9a6e.dir/CheckFunctionExists.c.o  -o cmTC_d9a6e -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lpthread -lm 
+CMakeFiles/cmTC_d9a6e.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `CHEEV_'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_d9a6e.dir/build.make:89: recipe for target 'cmTC_d9a6e' failed
+make[1]: *** [cmTC_d9a6e] Error 1
+make[1]: Leaving directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_d9a6e/fast' failed
+make: *** [cmTC_d9a6e/fast] Error 2
+
+
+Determining if the function CHEEV_ exists failed with the following output:
+Change Dir: /home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_d5777/fast"
+/usr/bin/make -f CMakeFiles/cmTC_d5777.dir/build.make CMakeFiles/cmTC_d5777.dir/build
+make[1]: Entering directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d5777.dir/CheckFunctionExists.c.o
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc   -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -o CMakeFiles/cmTC_d5777.dir/CheckFunctionExists.c.o   -c /opt/ecrc/cmake/3.11.1/ub16/share/cmake-3.11/Modules/CheckFunctionExists.c
+Linking C executable cmTC_d5777
+/opt/ecrc/cmake/3.11.1/ub16/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d5777.dir/link.txt --verbose=1
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc  -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -Wl,--no-as-needed  -rdynamic CMakeFiles/cmTC_d5777.dir/CheckFunctionExists.c.o  -o cmTC_d5777 -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lpthread -lm 
+CMakeFiles/cmTC_d5777.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `CHEEV_'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_d5777.dir/build.make:89: recipe for target 'cmTC_d5777' failed
+make[1]: *** [cmTC_d5777] Error 1
+make[1]: Leaving directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_d5777/fast' failed
+make: *** [cmTC_d5777/fast] Error 2
+
+
+Determining if the function CHEEV_ exists failed with the following output:
+Change Dir: /home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_657ab/fast"
+/usr/bin/make -f CMakeFiles/cmTC_657ab.dir/build.make CMakeFiles/cmTC_657ab.dir/build
+make[1]: Entering directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_657ab.dir/CheckFunctionExists.c.o
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc   -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -o CMakeFiles/cmTC_657ab.dir/CheckFunctionExists.c.o   -c /opt/ecrc/cmake/3.11.1/ub16/share/cmake-3.11/Modules/CheckFunctionExists.c
+Linking C executable cmTC_657ab
+/opt/ecrc/cmake/3.11.1/ub16/bin/cmake -E cmake_link_script CMakeFiles/cmTC_657ab.dir/link.txt --verbose=1
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc  -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -Wl,--no-as-needed  -rdynamic CMakeFiles/cmTC_657ab.dir/CheckFunctionExists.c.o  -o cmTC_657ab -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lpthread -lm 
+CMakeFiles/cmTC_657ab.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `CHEEV_'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_657ab.dir/build.make:89: recipe for target 'cmTC_657ab' failed
+make[1]: *** [cmTC_657ab] Error 1
+make[1]: Leaving directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_657ab/fast' failed
+make: *** [cmTC_657ab/fast] Error 2
+
+
+Determining if the function CHEEV_ exists failed with the following output:
+Change Dir: /home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_ce67c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ce67c.dir/build.make CMakeFiles/cmTC_ce67c.dir/build
+make[1]: Entering directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ce67c.dir/CheckFunctionExists.c.o
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc   -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -o CMakeFiles/cmTC_ce67c.dir/CheckFunctionExists.c.o   -c /opt/ecrc/cmake/3.11.1/ub16/share/cmake-3.11/Modules/CheckFunctionExists.c
+Linking C executable cmTC_ce67c
+/opt/ecrc/cmake/3.11.1/ub16/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ce67c.dir/link.txt --verbose=1
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc  -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -Wl,--no-as-needed  -rdynamic CMakeFiles/cmTC_ce67c.dir/CheckFunctionExists.c.o  -o cmTC_ce67c -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lpthread -lm 
+CMakeFiles/cmTC_ce67c.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `CHEEV_'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_ce67c.dir/build.make:89: recipe for target 'cmTC_ce67c' failed
+make[1]: *** [cmTC_ce67c] Error 1
+make[1]: Leaving directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_ce67c/fast' failed
+make: *** [cmTC_ce67c/fast] Error 2
+
+
+Determining if the function CHEEV_ exists failed with the following output:
+Change Dir: /home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_97800/fast"
+/usr/bin/make -f CMakeFiles/cmTC_97800.dir/build.make CMakeFiles/cmTC_97800.dir/build
+make[1]: Entering directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_97800.dir/CheckFunctionExists.c.o
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc   -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -o CMakeFiles/cmTC_97800.dir/CheckFunctionExists.c.o   -c /opt/ecrc/cmake/3.11.1/ub16/share/cmake-3.11/Modules/CheckFunctionExists.c
+Linking C executable cmTC_97800
+/opt/ecrc/cmake/3.11.1/ub16/bin/cmake -E cmake_link_script CMakeFiles/cmTC_97800.dir/link.txt --verbose=1
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc  -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -Wl,--no-as-needed  -rdynamic CMakeFiles/cmTC_97800.dir/CheckFunctionExists.c.o  -o cmTC_97800 -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lpthread -lm 
+CMakeFiles/cmTC_97800.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `CHEEV_'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_97800.dir/build.make:89: recipe for target 'cmTC_97800' failed
+make[1]: *** [cmTC_97800] Error 1
+make[1]: Leaving directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_97800/fast' failed
+make: *** [cmTC_97800/fast] Error 2
+
+
+Determining if the function CHEEV_ exists failed with the following output:
+Change Dir: /home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_02ce9/fast"
+/usr/bin/make -f CMakeFiles/cmTC_02ce9.dir/build.make CMakeFiles/cmTC_02ce9.dir/build
+make[1]: Entering directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_02ce9.dir/CheckFunctionExists.c.o
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc   -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -o CMakeFiles/cmTC_02ce9.dir/CheckFunctionExists.c.o   -c /opt/ecrc/cmake/3.11.1/ub16/share/cmake-3.11/Modules/CheckFunctionExists.c
+Linking C executable cmTC_02ce9
+/opt/ecrc/cmake/3.11.1/ub16/bin/cmake -E cmake_link_script CMakeFiles/cmTC_02ce9.dir/link.txt --verbose=1
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc  -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -Wl,--no-as-needed  -rdynamic CMakeFiles/cmTC_02ce9.dir/CheckFunctionExists.c.o  -o cmTC_02ce9 -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lpthread -lm 
+CMakeFiles/cmTC_02ce9.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `CHEEV_'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_02ce9.dir/build.make:89: recipe for target 'cmTC_02ce9' failed
+make[1]: *** [cmTC_02ce9] Error 1
+make[1]: Leaving directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_02ce9/fast' failed
+make: *** [cmTC_02ce9/fast] Error 2
+
+
+Determining if the function CHEEV_ exists failed with the following output:
+Change Dir: /home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_e17fd/fast"
+/usr/bin/make -f CMakeFiles/cmTC_e17fd.dir/build.make CMakeFiles/cmTC_e17fd.dir/build
+make[1]: Entering directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e17fd.dir/CheckFunctionExists.c.o
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc   -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -o CMakeFiles/cmTC_e17fd.dir/CheckFunctionExists.c.o   -c /opt/ecrc/cmake/3.11.1/ub16/share/cmake-3.11/Modules/CheckFunctionExists.c
+Linking C executable cmTC_e17fd
+/opt/ecrc/cmake/3.11.1/ub16/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e17fd.dir/link.txt --verbose=1
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc  -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -Wl,--no-as-needed  -rdynamic CMakeFiles/cmTC_e17fd.dir/CheckFunctionExists.c.o  -o cmTC_e17fd -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lpthread -lm 
+CMakeFiles/cmTC_e17fd.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `CHEEV_'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_e17fd.dir/build.make:89: recipe for target 'cmTC_e17fd' failed
+make[1]: *** [cmTC_e17fd] Error 1
+make[1]: Leaving directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_e17fd/fast' failed
+make: *** [cmTC_e17fd/fast] Error 2
+
+
+Determining if the function CHEEV_ exists failed with the following output:
+Change Dir: /home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_568ff/fast"
+/usr/bin/make -f CMakeFiles/cmTC_568ff.dir/build.make CMakeFiles/cmTC_568ff.dir/build
+make[1]: Entering directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_568ff.dir/CheckFunctionExists.c.o
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc   -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -o CMakeFiles/cmTC_568ff.dir/CheckFunctionExists.c.o   -c /opt/ecrc/cmake/3.11.1/ub16/share/cmake-3.11/Modules/CheckFunctionExists.c
+Linking C executable cmTC_568ff
+/opt/ecrc/cmake/3.11.1/ub16/bin/cmake -E cmake_link_script CMakeFiles/cmTC_568ff.dir/link.txt --verbose=1
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc  -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -Wl,--no-as-needed  -rdynamic CMakeFiles/cmTC_568ff.dir/CheckFunctionExists.c.o  -o cmTC_568ff -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lpthread -lm 
+CMakeFiles/cmTC_568ff.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `CHEEV_'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_568ff.dir/build.make:89: recipe for target 'cmTC_568ff' failed
+make[1]: *** [cmTC_568ff] Error 1
+make[1]: Leaving directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_568ff/fast' failed
+make: *** [cmTC_568ff/fast] Error 2
+
+
+Determining if the function CHEEV_ exists failed with the following output:
+Change Dir: /home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_8f5d4/fast"
+/usr/bin/make -f CMakeFiles/cmTC_8f5d4.dir/build.make CMakeFiles/cmTC_8f5d4.dir/build
+make[1]: Entering directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8f5d4.dir/CheckFunctionExists.c.o
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc   -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -o CMakeFiles/cmTC_8f5d4.dir/CheckFunctionExists.c.o   -c /opt/ecrc/cmake/3.11.1/ub16/share/cmake-3.11/Modules/CheckFunctionExists.c
+Linking C executable cmTC_8f5d4
+/opt/ecrc/cmake/3.11.1/ub16/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8f5d4.dir/link.txt --verbose=1
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc  -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -Wl,--no-as-needed  -rdynamic CMakeFiles/cmTC_8f5d4.dir/CheckFunctionExists.c.o  -o cmTC_8f5d4 -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lpthread -lm 
+CMakeFiles/cmTC_8f5d4.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `CHEEV_'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_8f5d4.dir/build.make:89: recipe for target 'cmTC_8f5d4' failed
+make[1]: *** [cmTC_8f5d4] Error 1
+make[1]: Leaving directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_8f5d4/fast' failed
+make: *** [cmTC_8f5d4/fast] Error 2
+
+
+Determining if the function CHEEV_ exists failed with the following output:
+Change Dir: /home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_4eed5/fast"
+/usr/bin/make -f CMakeFiles/cmTC_4eed5.dir/build.make CMakeFiles/cmTC_4eed5.dir/build
+make[1]: Entering directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4eed5.dir/CheckFunctionExists.c.o
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc   -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -o CMakeFiles/cmTC_4eed5.dir/CheckFunctionExists.c.o   -c /opt/ecrc/cmake/3.11.1/ub16/share/cmake-3.11/Modules/CheckFunctionExists.c
+Linking C executable cmTC_4eed5
+/opt/ecrc/cmake/3.11.1/ub16/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4eed5.dir/link.txt --verbose=1
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc  -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -Wl,--no-as-needed  -rdynamic CMakeFiles/cmTC_4eed5.dir/CheckFunctionExists.c.o  -o cmTC_4eed5 -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lpthread -lm 
+CMakeFiles/cmTC_4eed5.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `CHEEV_'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_4eed5.dir/build.make:89: recipe for target 'cmTC_4eed5' failed
+make[1]: *** [cmTC_4eed5] Error 1
+make[1]: Leaving directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_4eed5/fast' failed
+make: *** [cmTC_4eed5/fast] Error 2
+
+
+Determining if the function CHEEV_ exists failed with the following output:
+Change Dir: /home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_7b6fa/fast"
+/usr/bin/make -f CMakeFiles/cmTC_7b6fa.dir/build.make CMakeFiles/cmTC_7b6fa.dir/build
+make[1]: Entering directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7b6fa.dir/CheckFunctionExists.c.o
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc   -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -o CMakeFiles/cmTC_7b6fa.dir/CheckFunctionExists.c.o   -c /opt/ecrc/cmake/3.11.1/ub16/share/cmake-3.11/Modules/CheckFunctionExists.c
+Linking C executable cmTC_7b6fa
+/opt/ecrc/cmake/3.11.1/ub16/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7b6fa.dir/link.txt --verbose=1
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc  -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -Wl,--no-as-needed  -rdynamic CMakeFiles/cmTC_7b6fa.dir/CheckFunctionExists.c.o  -o cmTC_7b6fa -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lpthread -lm 
+CMakeFiles/cmTC_7b6fa.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `CHEEV_'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_7b6fa.dir/build.make:89: recipe for target 'cmTC_7b6fa' failed
+make[1]: *** [cmTC_7b6fa] Error 1
+make[1]: Leaving directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_7b6fa/fast' failed
+make: *** [cmTC_7b6fa/fast] Error 2
+
+
+Determining if the function CHEEV_ exists failed with the following output:
+Change Dir: /home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_1832c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_1832c.dir/build.make CMakeFiles/cmTC_1832c.dir/build
+make[1]: Entering directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1832c.dir/CheckFunctionExists.c.o
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc   -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -o CMakeFiles/cmTC_1832c.dir/CheckFunctionExists.c.o   -c /opt/ecrc/cmake/3.11.1/ub16/share/cmake-3.11/Modules/CheckFunctionExists.c
+Linking C executable cmTC_1832c
+/opt/ecrc/cmake/3.11.1/ub16/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1832c.dir/link.txt --verbose=1
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc  -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -Wl,--no-as-needed  -rdynamic CMakeFiles/cmTC_1832c.dir/CheckFunctionExists.c.o  -o cmTC_1832c -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lpthread -lm 
+CMakeFiles/cmTC_1832c.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `CHEEV_'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_1832c.dir/build.make:89: recipe for target 'cmTC_1832c' failed
+make[1]: *** [cmTC_1832c] Error 1
+make[1]: Leaving directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_1832c/fast' failed
+make: *** [cmTC_1832c/fast] Error 2
+
+
+Determining if the function CHEEV_ exists failed with the following output:
+Change Dir: /home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_d3af5/fast"
+/usr/bin/make -f CMakeFiles/cmTC_d3af5.dir/build.make CMakeFiles/cmTC_d3af5.dir/build
+make[1]: Entering directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d3af5.dir/CheckFunctionExists.c.o
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc   -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -o CMakeFiles/cmTC_d3af5.dir/CheckFunctionExists.c.o   -c /opt/ecrc/cmake/3.11.1/ub16/share/cmake-3.11/Modules/CheckFunctionExists.c
+Linking C executable cmTC_d3af5
+/opt/ecrc/cmake/3.11.1/ub16/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d3af5.dir/link.txt --verbose=1
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc  -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -Wl,--no-as-needed  -rdynamic CMakeFiles/cmTC_d3af5.dir/CheckFunctionExists.c.o  -o cmTC_d3af5 -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lpthread -lm 
+CMakeFiles/cmTC_d3af5.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `CHEEV_'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_d3af5.dir/build.make:89: recipe for target 'cmTC_d3af5' failed
+make[1]: *** [cmTC_d3af5] Error 1
+make[1]: Leaving directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_d3af5/fast' failed
+make: *** [cmTC_d3af5/fast] Error 2
+
+
+Determining if the function CHEEV_ exists failed with the following output:
+Change Dir: /home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_cf04e/fast"
+/usr/bin/make -f CMakeFiles/cmTC_cf04e.dir/build.make CMakeFiles/cmTC_cf04e.dir/build
+make[1]: Entering directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_cf04e.dir/CheckFunctionExists.c.o
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc   -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -o CMakeFiles/cmTC_cf04e.dir/CheckFunctionExists.c.o   -c /opt/ecrc/cmake/3.11.1/ub16/share/cmake-3.11/Modules/CheckFunctionExists.c
+Linking C executable cmTC_cf04e
+/opt/ecrc/cmake/3.11.1/ub16/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cf04e.dir/link.txt --verbose=1
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc  -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -Wl,--no-as-needed  -rdynamic CMakeFiles/cmTC_cf04e.dir/CheckFunctionExists.c.o  -o cmTC_cf04e -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lpthread -lm 
+CMakeFiles/cmTC_cf04e.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `CHEEV_'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_cf04e.dir/build.make:89: recipe for target 'cmTC_cf04e' failed
+make[1]: *** [cmTC_cf04e] Error 1
+make[1]: Leaving directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_cf04e/fast' failed
+make: *** [cmTC_cf04e/fast] Error 2
+
+
+Determining if the function CHEEV_ exists failed with the following output:
+Change Dir: /home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_83958/fast"
+/usr/bin/make -f CMakeFiles/cmTC_83958.dir/build.make CMakeFiles/cmTC_83958.dir/build
+make[1]: Entering directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_83958.dir/CheckFunctionExists.c.o
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc   -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -o CMakeFiles/cmTC_83958.dir/CheckFunctionExists.c.o   -c /opt/ecrc/cmake/3.11.1/ub16/share/cmake-3.11/Modules/CheckFunctionExists.c
+Linking C executable cmTC_83958
+/opt/ecrc/cmake/3.11.1/ub16/bin/cmake -E cmake_link_script CMakeFiles/cmTC_83958.dir/link.txt --verbose=1
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc  -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -Wl,--no-as-needed  -rdynamic CMakeFiles/cmTC_83958.dir/CheckFunctionExists.c.o  -o cmTC_83958 -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lpthread -lm 
+CMakeFiles/cmTC_83958.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `CHEEV_'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_83958.dir/build.make:89: recipe for target 'cmTC_83958' failed
+make[1]: *** [cmTC_83958] Error 1
+make[1]: Leaving directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_83958/fast' failed
+make: *** [cmTC_83958/fast] Error 2
+
+
+Determining if the function CHEEV_ exists failed with the following output:
+Change Dir: /home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_b2e1e/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b2e1e.dir/build.make CMakeFiles/cmTC_b2e1e.dir/build
+make[1]: Entering directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b2e1e.dir/CheckFunctionExists.c.o
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc   -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -o CMakeFiles/cmTC_b2e1e.dir/CheckFunctionExists.c.o   -c /opt/ecrc/cmake/3.11.1/ub16/share/cmake-3.11/Modules/CheckFunctionExists.c
+Linking C executable cmTC_b2e1e
+/opt/ecrc/cmake/3.11.1/ub16/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b2e1e.dir/link.txt --verbose=1
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc  -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -Wl,--no-as-needed  -rdynamic CMakeFiles/cmTC_b2e1e.dir/CheckFunctionExists.c.o  -o cmTC_b2e1e -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lpthread -lm 
+CMakeFiles/cmTC_b2e1e.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `CHEEV_'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_b2e1e.dir/build.make:89: recipe for target 'cmTC_b2e1e' failed
+make[1]: *** [cmTC_b2e1e] Error 1
+make[1]: Leaving directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_b2e1e/fast' failed
+make: *** [cmTC_b2e1e/fast] Error 2
+
+
+Determining if the function CHEEV_ exists failed with the following output:
+Change Dir: /home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_699c7/fast"
+/usr/bin/make -f CMakeFiles/cmTC_699c7.dir/build.make CMakeFiles/cmTC_699c7.dir/build
+make[1]: Entering directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_699c7.dir/CheckFunctionExists.c.o
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc   -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -o CMakeFiles/cmTC_699c7.dir/CheckFunctionExists.c.o   -c /opt/ecrc/cmake/3.11.1/ub16/share/cmake-3.11/Modules/CheckFunctionExists.c
+Linking C executable cmTC_699c7
+/opt/ecrc/cmake/3.11.1/ub16/bin/cmake -E cmake_link_script CMakeFiles/cmTC_699c7.dir/link.txt --verbose=1
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc  -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -Wl,--no-as-needed  -rdynamic CMakeFiles/cmTC_699c7.dir/CheckFunctionExists.c.o  -o cmTC_699c7 -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lpthread -lm 
+CMakeFiles/cmTC_699c7.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `CHEEV_'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_699c7.dir/build.make:89: recipe for target 'cmTC_699c7' failed
+make[1]: *** [cmTC_699c7] Error 1
+make[1]: Leaving directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_699c7/fast' failed
+make: *** [cmTC_699c7/fast] Error 2
+
+
+Determining if the function CHEEV_ exists failed with the following output:
+Change Dir: /home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_befda/fast"
+/usr/bin/make -f CMakeFiles/cmTC_befda.dir/build.make CMakeFiles/cmTC_befda.dir/build
+make[1]: Entering directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_befda.dir/CheckFunctionExists.c.o
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc   -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -o CMakeFiles/cmTC_befda.dir/CheckFunctionExists.c.o   -c /opt/ecrc/cmake/3.11.1/ub16/share/cmake-3.11/Modules/CheckFunctionExists.c
+Linking C executable cmTC_befda
+/opt/ecrc/cmake/3.11.1/ub16/bin/cmake -E cmake_link_script CMakeFiles/cmTC_befda.dir/link.txt --verbose=1
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc  -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -Wl,--no-as-needed  -rdynamic CMakeFiles/cmTC_befda.dir/CheckFunctionExists.c.o  -o cmTC_befda -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lpthread -lm 
+CMakeFiles/cmTC_befda.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `CHEEV_'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_befda.dir/build.make:89: recipe for target 'cmTC_befda' failed
+make[1]: *** [cmTC_befda] Error 1
+make[1]: Leaving directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_befda/fast' failed
+make: *** [cmTC_befda/fast] Error 2
+
+
+Determining if the function CHEEV_ exists failed with the following output:
+Change Dir: /home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_ae0b8/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ae0b8.dir/build.make CMakeFiles/cmTC_ae0b8.dir/build
+make[1]: Entering directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ae0b8.dir/CheckFunctionExists.c.o
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc   -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -o CMakeFiles/cmTC_ae0b8.dir/CheckFunctionExists.c.o   -c /opt/ecrc/cmake/3.11.1/ub16/share/cmake-3.11/Modules/CheckFunctionExists.c
+Linking C executable cmTC_ae0b8
+/opt/ecrc/cmake/3.11.1/ub16/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ae0b8.dir/link.txt --verbose=1
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc  -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -Wl,--no-as-needed  -rdynamic CMakeFiles/cmTC_ae0b8.dir/CheckFunctionExists.c.o  -o cmTC_ae0b8 -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lpthread -lm 
+CMakeFiles/cmTC_ae0b8.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `CHEEV_'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_ae0b8.dir/build.make:89: recipe for target 'cmTC_ae0b8' failed
+make[1]: *** [cmTC_ae0b8] Error 1
+make[1]: Leaving directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_ae0b8/fast' failed
+make: *** [cmTC_ae0b8/fast] Error 2
+
+
+Determining if the function CHEEV_ exists failed with the following output:
+Change Dir: /home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_8add5/fast"
+/usr/bin/make -f CMakeFiles/cmTC_8add5.dir/build.make CMakeFiles/cmTC_8add5.dir/build
+make[1]: Entering directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8add5.dir/CheckFunctionExists.c.o
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc   -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -o CMakeFiles/cmTC_8add5.dir/CheckFunctionExists.c.o   -c /opt/ecrc/cmake/3.11.1/ub16/share/cmake-3.11/Modules/CheckFunctionExists.c
+Linking C executable cmTC_8add5
+/opt/ecrc/cmake/3.11.1/ub16/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8add5.dir/link.txt --verbose=1
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc  -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -Wl,--no-as-needed  -rdynamic CMakeFiles/cmTC_8add5.dir/CheckFunctionExists.c.o  -o cmTC_8add5 -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lpthread -lm 
+CMakeFiles/cmTC_8add5.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `CHEEV_'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_8add5.dir/build.make:89: recipe for target 'cmTC_8add5' failed
+make[1]: *** [cmTC_8add5] Error 1
+make[1]: Leaving directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_8add5/fast' failed
+make: *** [cmTC_8add5/fast] Error 2
+
+
+Determining if the function CHEEV_ exists failed with the following output:
+Change Dir: /home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_40505/fast"
+/usr/bin/make -f CMakeFiles/cmTC_40505.dir/build.make CMakeFiles/cmTC_40505.dir/build
+make[1]: Entering directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_40505.dir/CheckFunctionExists.c.o
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc   -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -o CMakeFiles/cmTC_40505.dir/CheckFunctionExists.c.o   -c /opt/ecrc/cmake/3.11.1/ub16/share/cmake-3.11/Modules/CheckFunctionExists.c
+Linking C executable cmTC_40505
+/opt/ecrc/cmake/3.11.1/ub16/bin/cmake -E cmake_link_script CMakeFiles/cmTC_40505.dir/link.txt --verbose=1
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc  -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -Wl,--no-as-needed  -rdynamic CMakeFiles/cmTC_40505.dir/CheckFunctionExists.c.o  -o cmTC_40505 -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lpthread -lm 
+CMakeFiles/cmTC_40505.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `CHEEV_'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_40505.dir/build.make:89: recipe for target 'cmTC_40505' failed
+make[1]: *** [cmTC_40505] Error 1
+make[1]: Leaving directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_40505/fast' failed
+make: *** [cmTC_40505/fast] Error 2
+
+
+Determining if the function CHEEV_ exists failed with the following output:
+Change Dir: /home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_8dec9/fast"
+/usr/bin/make -f CMakeFiles/cmTC_8dec9.dir/build.make CMakeFiles/cmTC_8dec9.dir/build
+make[1]: Entering directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8dec9.dir/CheckFunctionExists.c.o
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc   -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -o CMakeFiles/cmTC_8dec9.dir/CheckFunctionExists.c.o   -c /opt/ecrc/cmake/3.11.1/ub16/share/cmake-3.11/Modules/CheckFunctionExists.c
+Linking C executable cmTC_8dec9
+/opt/ecrc/cmake/3.11.1/ub16/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8dec9.dir/link.txt --verbose=1
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc  -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -Wl,--no-as-needed  -rdynamic CMakeFiles/cmTC_8dec9.dir/CheckFunctionExists.c.o  -o cmTC_8dec9 -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lpthread -lm 
+CMakeFiles/cmTC_8dec9.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `CHEEV_'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_8dec9.dir/build.make:89: recipe for target 'cmTC_8dec9' failed
+make[1]: *** [cmTC_8dec9] Error 1
+make[1]: Leaving directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_8dec9/fast' failed
+make: *** [cmTC_8dec9/fast] Error 2
+
+
+Determining if the function CHEEV_ exists failed with the following output:
+Change Dir: /home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_c48fb/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c48fb.dir/build.make CMakeFiles/cmTC_c48fb.dir/build
+make[1]: Entering directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c48fb.dir/CheckFunctionExists.c.o
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc   -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -o CMakeFiles/cmTC_c48fb.dir/CheckFunctionExists.c.o   -c /opt/ecrc/cmake/3.11.1/ub16/share/cmake-3.11/Modules/CheckFunctionExists.c
+Linking C executable cmTC_c48fb
+/opt/ecrc/cmake/3.11.1/ub16/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c48fb.dir/link.txt --verbose=1
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc  -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -Wl,--no-as-needed  -rdynamic CMakeFiles/cmTC_c48fb.dir/CheckFunctionExists.c.o  -o cmTC_c48fb -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lpthread -lm 
+CMakeFiles/cmTC_c48fb.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `CHEEV_'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_c48fb.dir/build.make:89: recipe for target 'cmTC_c48fb' failed
+make[1]: *** [cmTC_c48fb] Error 1
+make[1]: Leaving directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_c48fb/fast' failed
+make: *** [cmTC_c48fb/fast] Error 2
+
+
+Determining if the function CHEEV_ exists failed with the following output:
+Change Dir: /home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_0d4cd/fast"
+/usr/bin/make -f CMakeFiles/cmTC_0d4cd.dir/build.make CMakeFiles/cmTC_0d4cd.dir/build
+make[1]: Entering directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0d4cd.dir/CheckFunctionExists.c.o
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc   -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -o CMakeFiles/cmTC_0d4cd.dir/CheckFunctionExists.c.o   -c /opt/ecrc/cmake/3.11.1/ub16/share/cmake-3.11/Modules/CheckFunctionExists.c
+Linking C executable cmTC_0d4cd
+/opt/ecrc/cmake/3.11.1/ub16/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0d4cd.dir/link.txt --verbose=1
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc  -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -Wl,--no-as-needed  -rdynamic CMakeFiles/cmTC_0d4cd.dir/CheckFunctionExists.c.o  -o cmTC_0d4cd -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lpthread -lm 
+CMakeFiles/cmTC_0d4cd.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `CHEEV_'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_0d4cd.dir/build.make:89: recipe for target 'cmTC_0d4cd' failed
+make[1]: *** [cmTC_0d4cd] Error 1
+make[1]: Leaving directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_0d4cd/fast' failed
+make: *** [cmTC_0d4cd/fast] Error 2
+
+
+Determining if the function CHEEV_ exists failed with the following output:
+Change Dir: /home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_36156/fast"
+/usr/bin/make -f CMakeFiles/cmTC_36156.dir/build.make CMakeFiles/cmTC_36156.dir/build
+make[1]: Entering directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_36156.dir/CheckFunctionExists.c.o
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc   -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -o CMakeFiles/cmTC_36156.dir/CheckFunctionExists.c.o   -c /opt/ecrc/cmake/3.11.1/ub16/share/cmake-3.11/Modules/CheckFunctionExists.c
+Linking C executable cmTC_36156
+/opt/ecrc/cmake/3.11.1/ub16/bin/cmake -E cmake_link_script CMakeFiles/cmTC_36156.dir/link.txt --verbose=1
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc  -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -Wl,--no-as-needed  -rdynamic CMakeFiles/cmTC_36156.dir/CheckFunctionExists.c.o  -o cmTC_36156 -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lpthread -lm 
+CMakeFiles/cmTC_36156.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `CHEEV_'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_36156.dir/build.make:89: recipe for target 'cmTC_36156' failed
+make[1]: *** [cmTC_36156] Error 1
+make[1]: Leaving directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_36156/fast' failed
+make: *** [cmTC_36156/fast] Error 2
+
+
+Determining if the function CHEEV_ exists failed with the following output:
+Change Dir: /home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_a1b6c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a1b6c.dir/build.make CMakeFiles/cmTC_a1b6c.dir/build
+make[1]: Entering directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a1b6c.dir/CheckFunctionExists.c.o
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc   -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -o CMakeFiles/cmTC_a1b6c.dir/CheckFunctionExists.c.o   -c /opt/ecrc/cmake/3.11.1/ub16/share/cmake-3.11/Modules/CheckFunctionExists.c
+Linking C executable cmTC_a1b6c
+/opt/ecrc/cmake/3.11.1/ub16/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a1b6c.dir/link.txt --verbose=1
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc  -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -Wl,--no-as-needed  -rdynamic CMakeFiles/cmTC_a1b6c.dir/CheckFunctionExists.c.o  -o cmTC_a1b6c -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lpthread -lm 
+CMakeFiles/cmTC_a1b6c.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `CHEEV_'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_a1b6c.dir/build.make:89: recipe for target 'cmTC_a1b6c' failed
+make[1]: *** [cmTC_a1b6c] Error 1
+make[1]: Leaving directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_a1b6c/fast' failed
+make: *** [cmTC_a1b6c/fast] Error 2
+
+
+Determining if the function CHEEV_ exists failed with the following output:
+Change Dir: /home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_9c2b1/fast"
+/usr/bin/make -f CMakeFiles/cmTC_9c2b1.dir/build.make CMakeFiles/cmTC_9c2b1.dir/build
+make[1]: Entering directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9c2b1.dir/CheckFunctionExists.c.o
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc   -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -o CMakeFiles/cmTC_9c2b1.dir/CheckFunctionExists.c.o   -c /opt/ecrc/cmake/3.11.1/ub16/share/cmake-3.11/Modules/CheckFunctionExists.c
+Linking C executable cmTC_9c2b1
+/opt/ecrc/cmake/3.11.1/ub16/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9c2b1.dir/link.txt --verbose=1
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc  -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -Wl,--no-as-needed  -rdynamic CMakeFiles/cmTC_9c2b1.dir/CheckFunctionExists.c.o  -o cmTC_9c2b1 -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lpthread -lm 
+CMakeFiles/cmTC_9c2b1.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `CHEEV_'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_9c2b1.dir/build.make:89: recipe for target 'cmTC_9c2b1' failed
+make[1]: *** [cmTC_9c2b1] Error 1
+make[1]: Leaving directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_9c2b1/fast' failed
+make: *** [cmTC_9c2b1/fast] Error 2
+
+
+Determining if the function CHEEV_ exists failed with the following output:
+Change Dir: /home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_ae18d/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ae18d.dir/build.make CMakeFiles/cmTC_ae18d.dir/build
+make[1]: Entering directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ae18d.dir/CheckFunctionExists.c.o
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc   -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -o CMakeFiles/cmTC_ae18d.dir/CheckFunctionExists.c.o   -c /opt/ecrc/cmake/3.11.1/ub16/share/cmake-3.11/Modules/CheckFunctionExists.c
+Linking C executable cmTC_ae18d
+/opt/ecrc/cmake/3.11.1/ub16/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ae18d.dir/link.txt --verbose=1
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc  -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -Wl,--no-as-needed  -rdynamic CMakeFiles/cmTC_ae18d.dir/CheckFunctionExists.c.o  -o cmTC_ae18d -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lpthread -lm 
+CMakeFiles/cmTC_ae18d.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `CHEEV_'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_ae18d.dir/build.make:89: recipe for target 'cmTC_ae18d' failed
+make[1]: *** [cmTC_ae18d] Error 1
+make[1]: Leaving directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_ae18d/fast' failed
+make: *** [cmTC_ae18d/fast] Error 2
+
+
+Determining if the function CHEEV_ exists failed with the following output:
+Change Dir: /home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_72e84/fast"
+/usr/bin/make -f CMakeFiles/cmTC_72e84.dir/build.make CMakeFiles/cmTC_72e84.dir/build
+make[1]: Entering directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_72e84.dir/CheckFunctionExists.c.o
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc   -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -o CMakeFiles/cmTC_72e84.dir/CheckFunctionExists.c.o   -c /opt/ecrc/cmake/3.11.1/ub16/share/cmake-3.11/Modules/CheckFunctionExists.c
+Linking C executable cmTC_72e84
+/opt/ecrc/cmake/3.11.1/ub16/bin/cmake -E cmake_link_script CMakeFiles/cmTC_72e84.dir/link.txt --verbose=1
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc  -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -Wl,--no-as-needed  -rdynamic CMakeFiles/cmTC_72e84.dir/CheckFunctionExists.c.o  -o cmTC_72e84 -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lpthread -lm 
+CMakeFiles/cmTC_72e84.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `CHEEV_'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_72e84.dir/build.make:89: recipe for target 'cmTC_72e84' failed
+make[1]: *** [cmTC_72e84] Error 1
+make[1]: Leaving directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_72e84/fast' failed
+make: *** [cmTC_72e84/fast] Error 2
+
+
+Determining if the function CHEEV_ exists failed with the following output:
+Change Dir: /home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_f349d/fast"
+/usr/bin/make -f CMakeFiles/cmTC_f349d.dir/build.make CMakeFiles/cmTC_f349d.dir/build
+make[1]: Entering directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f349d.dir/CheckFunctionExists.c.o
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc   -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -o CMakeFiles/cmTC_f349d.dir/CheckFunctionExists.c.o   -c /opt/ecrc/cmake/3.11.1/ub16/share/cmake-3.11/Modules/CheckFunctionExists.c
+Linking C executable cmTC_f349d
+/opt/ecrc/cmake/3.11.1/ub16/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f349d.dir/link.txt --verbose=1
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc  -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -Wl,--no-as-needed  -rdynamic CMakeFiles/cmTC_f349d.dir/CheckFunctionExists.c.o  -o cmTC_f349d -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lpthread -lm 
+CMakeFiles/cmTC_f349d.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `CHEEV_'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_f349d.dir/build.make:89: recipe for target 'cmTC_f349d' failed
+make[1]: *** [cmTC_f349d] Error 1
+make[1]: Leaving directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_f349d/fast' failed
+make: *** [cmTC_f349d/fast] Error 2
+
+
+Determining if the function CHEEV_ exists failed with the following output:
+Change Dir: /home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_a614e/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a614e.dir/build.make CMakeFiles/cmTC_a614e.dir/build
+make[1]: Entering directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a614e.dir/CheckFunctionExists.c.o
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc   -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -o CMakeFiles/cmTC_a614e.dir/CheckFunctionExists.c.o   -c /opt/ecrc/cmake/3.11.1/ub16/share/cmake-3.11/Modules/CheckFunctionExists.c
+Linking C executable cmTC_a614e
+/opt/ecrc/cmake/3.11.1/ub16/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a614e.dir/link.txt --verbose=1
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc  -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -Wl,--no-as-needed  -rdynamic CMakeFiles/cmTC_a614e.dir/CheckFunctionExists.c.o  -o cmTC_a614e -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lpthread -lm 
+CMakeFiles/cmTC_a614e.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `CHEEV_'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_a614e.dir/build.make:89: recipe for target 'cmTC_a614e' failed
+make[1]: *** [cmTC_a614e] Error 1
+make[1]: Leaving directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_a614e/fast' failed
+make: *** [cmTC_a614e/fast] Error 2
+
+
+Determining if the function CHEEV_ exists failed with the following output:
+Change Dir: /home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_9b966/fast"
+/usr/bin/make -f CMakeFiles/cmTC_9b966.dir/build.make CMakeFiles/cmTC_9b966.dir/build
+make[1]: Entering directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9b966.dir/CheckFunctionExists.c.o
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc   -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -o CMakeFiles/cmTC_9b966.dir/CheckFunctionExists.c.o   -c /opt/ecrc/cmake/3.11.1/ub16/share/cmake-3.11/Modules/CheckFunctionExists.c
+Linking C executable cmTC_9b966
+/opt/ecrc/cmake/3.11.1/ub16/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9b966.dir/link.txt --verbose=1
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc  -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -Wl,--no-as-needed  -rdynamic CMakeFiles/cmTC_9b966.dir/CheckFunctionExists.c.o  -o cmTC_9b966 -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lpthread -lm 
+CMakeFiles/cmTC_9b966.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `CHEEV_'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_9b966.dir/build.make:89: recipe for target 'cmTC_9b966' failed
+make[1]: *** [cmTC_9b966] Error 1
+make[1]: Leaving directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_9b966/fast' failed
+make: *** [cmTC_9b966/fast] Error 2
+
+
+Determining if the function CHEEV_ exists failed with the following output:
+Change Dir: /home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_1cd90/fast"
+/usr/bin/make -f CMakeFiles/cmTC_1cd90.dir/build.make CMakeFiles/cmTC_1cd90.dir/build
+make[1]: Entering directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1cd90.dir/CheckFunctionExists.c.o
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc   -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -o CMakeFiles/cmTC_1cd90.dir/CheckFunctionExists.c.o   -c /opt/ecrc/cmake/3.11.1/ub16/share/cmake-3.11/Modules/CheckFunctionExists.c
+Linking C executable cmTC_1cd90
+/opt/ecrc/cmake/3.11.1/ub16/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1cd90.dir/link.txt --verbose=1
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc  -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -Wl,--no-as-needed  -rdynamic CMakeFiles/cmTC_1cd90.dir/CheckFunctionExists.c.o  -o cmTC_1cd90 -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lpthread -lm 
+CMakeFiles/cmTC_1cd90.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `CHEEV_'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_1cd90.dir/build.make:89: recipe for target 'cmTC_1cd90' failed
+make[1]: *** [cmTC_1cd90] Error 1
+make[1]: Leaving directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_1cd90/fast' failed
+make: *** [cmTC_1cd90/fast] Error 2
+
+
+Determining if the function CHEEV_ exists failed with the following output:
+Change Dir: /home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_8c6ff/fast"
+/usr/bin/make -f CMakeFiles/cmTC_8c6ff.dir/build.make CMakeFiles/cmTC_8c6ff.dir/build
+make[1]: Entering directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8c6ff.dir/CheckFunctionExists.c.o
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc   -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -o CMakeFiles/cmTC_8c6ff.dir/CheckFunctionExists.c.o   -c /opt/ecrc/cmake/3.11.1/ub16/share/cmake-3.11/Modules/CheckFunctionExists.c
+Linking C executable cmTC_8c6ff
+/opt/ecrc/cmake/3.11.1/ub16/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8c6ff.dir/link.txt --verbose=1
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc  -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -Wl,--no-as-needed  -rdynamic CMakeFiles/cmTC_8c6ff.dir/CheckFunctionExists.c.o  -o cmTC_8c6ff -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lpthread -lm 
+CMakeFiles/cmTC_8c6ff.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `CHEEV_'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_8c6ff.dir/build.make:89: recipe for target 'cmTC_8c6ff' failed
+make[1]: *** [cmTC_8c6ff] Error 1
+make[1]: Leaving directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_8c6ff/fast' failed
+make: *** [cmTC_8c6ff/fast] Error 2
+
+
+Determining if the function CHEEV_ exists failed with the following output:
+Change Dir: /home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_0ee17/fast"
+/usr/bin/make -f CMakeFiles/cmTC_0ee17.dir/build.make CMakeFiles/cmTC_0ee17.dir/build
+make[1]: Entering directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0ee17.dir/CheckFunctionExists.c.o
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc   -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -o CMakeFiles/cmTC_0ee17.dir/CheckFunctionExists.c.o   -c /opt/ecrc/cmake/3.11.1/ub16/share/cmake-3.11/Modules/CheckFunctionExists.c
+Linking C executable cmTC_0ee17
+/opt/ecrc/cmake/3.11.1/ub16/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0ee17.dir/link.txt --verbose=1
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc  -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -Wl,--no-as-needed  -rdynamic CMakeFiles/cmTC_0ee17.dir/CheckFunctionExists.c.o  -o cmTC_0ee17 -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lpthread -lm 
+CMakeFiles/cmTC_0ee17.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `CHEEV_'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_0ee17.dir/build.make:89: recipe for target 'cmTC_0ee17' failed
+make[1]: *** [cmTC_0ee17] Error 1
+make[1]: Leaving directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_0ee17/fast' failed
+make: *** [cmTC_0ee17/fast] Error 2
+
+
+Determining if the function CHEEV_ exists failed with the following output:
+Change Dir: /home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_5bc9c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_5bc9c.dir/build.make CMakeFiles/cmTC_5bc9c.dir/build
+make[1]: Entering directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5bc9c.dir/CheckFunctionExists.c.o
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc   -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -o CMakeFiles/cmTC_5bc9c.dir/CheckFunctionExists.c.o   -c /opt/ecrc/cmake/3.11.1/ub16/share/cmake-3.11/Modules/CheckFunctionExists.c
+Linking C executable cmTC_5bc9c
+/opt/ecrc/cmake/3.11.1/ub16/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5bc9c.dir/link.txt --verbose=1
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc  -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -Wl,--no-as-needed  -rdynamic CMakeFiles/cmTC_5bc9c.dir/CheckFunctionExists.c.o  -o cmTC_5bc9c -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lpthread -lm 
+CMakeFiles/cmTC_5bc9c.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `CHEEV_'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_5bc9c.dir/build.make:89: recipe for target 'cmTC_5bc9c' failed
+make[1]: *** [cmTC_5bc9c] Error 1
+make[1]: Leaving directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_5bc9c/fast' failed
+make: *** [cmTC_5bc9c/fast] Error 2
+
+
+Determining if the function CHEEV_ exists failed with the following output:
+Change Dir: /home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_07586/fast"
+/usr/bin/make -f CMakeFiles/cmTC_07586.dir/build.make CMakeFiles/cmTC_07586.dir/build
+make[1]: Entering directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_07586.dir/CheckFunctionExists.c.o
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc   -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -o CMakeFiles/cmTC_07586.dir/CheckFunctionExists.c.o   -c /opt/ecrc/cmake/3.11.1/ub16/share/cmake-3.11/Modules/CheckFunctionExists.c
+Linking C executable cmTC_07586
+/opt/ecrc/cmake/3.11.1/ub16/bin/cmake -E cmake_link_script CMakeFiles/cmTC_07586.dir/link.txt --verbose=1
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc  -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -Wl,--no-as-needed  -rdynamic CMakeFiles/cmTC_07586.dir/CheckFunctionExists.c.o  -o cmTC_07586 -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lpthread -lm 
+CMakeFiles/cmTC_07586.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `CHEEV_'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_07586.dir/build.make:89: recipe for target 'cmTC_07586' failed
+make[1]: *** [cmTC_07586] Error 1
+make[1]: Leaving directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_07586/fast' failed
+make: *** [cmTC_07586/fast] Error 2
+
+
+Determining if the function CHEEV_ exists failed with the following output:
+Change Dir: /home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_f34c0/fast"
+/usr/bin/make -f CMakeFiles/cmTC_f34c0.dir/build.make CMakeFiles/cmTC_f34c0.dir/build
+make[1]: Entering directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f34c0.dir/CheckFunctionExists.c.o
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc   -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -o CMakeFiles/cmTC_f34c0.dir/CheckFunctionExists.c.o   -c /opt/ecrc/cmake/3.11.1/ub16/share/cmake-3.11/Modules/CheckFunctionExists.c
+Linking C executable cmTC_f34c0
+/opt/ecrc/cmake/3.11.1/ub16/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f34c0.dir/link.txt --verbose=1
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc  -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -Wl,--no-as-needed  -rdynamic CMakeFiles/cmTC_f34c0.dir/CheckFunctionExists.c.o  -o cmTC_f34c0 -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lpthread -lm 
+CMakeFiles/cmTC_f34c0.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `CHEEV_'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_f34c0.dir/build.make:89: recipe for target 'cmTC_f34c0' failed
+make[1]: *** [cmTC_f34c0] Error 1
+make[1]: Leaving directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_f34c0/fast' failed
+make: *** [cmTC_f34c0/fast] Error 2
+
+
+Determining if the function CHEEV_ exists failed with the following output:
+Change Dir: /home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_84f4b/fast"
+/usr/bin/make -f CMakeFiles/cmTC_84f4b.dir/build.make CMakeFiles/cmTC_84f4b.dir/build
+make[1]: Entering directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_84f4b.dir/CheckFunctionExists.c.o
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc   -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -o CMakeFiles/cmTC_84f4b.dir/CheckFunctionExists.c.o   -c /opt/ecrc/cmake/3.11.1/ub16/share/cmake-3.11/Modules/CheckFunctionExists.c
+Linking C executable cmTC_84f4b
+/opt/ecrc/cmake/3.11.1/ub16/bin/cmake -E cmake_link_script CMakeFiles/cmTC_84f4b.dir/link.txt --verbose=1
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc  -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -Wl,--no-as-needed  -rdynamic CMakeFiles/cmTC_84f4b.dir/CheckFunctionExists.c.o  -o cmTC_84f4b -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lpthread -lm 
+CMakeFiles/cmTC_84f4b.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `CHEEV_'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_84f4b.dir/build.make:89: recipe for target 'cmTC_84f4b' failed
+make[1]: *** [cmTC_84f4b] Error 1
+make[1]: Leaving directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_84f4b/fast' failed
+make: *** [cmTC_84f4b/fast] Error 2
+
+
+Determining if the function CHEEV_ exists failed with the following output:
+Change Dir: /home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_71432/fast"
+/usr/bin/make -f CMakeFiles/cmTC_71432.dir/build.make CMakeFiles/cmTC_71432.dir/build
+make[1]: Entering directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_71432.dir/CheckFunctionExists.c.o
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc   -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -o CMakeFiles/cmTC_71432.dir/CheckFunctionExists.c.o   -c /opt/ecrc/cmake/3.11.1/ub16/share/cmake-3.11/Modules/CheckFunctionExists.c
+Linking C executable cmTC_71432
+/opt/ecrc/cmake/3.11.1/ub16/bin/cmake -E cmake_link_script CMakeFiles/cmTC_71432.dir/link.txt --verbose=1
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc  -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -Wl,--no-as-needed  -rdynamic CMakeFiles/cmTC_71432.dir/CheckFunctionExists.c.o  -o cmTC_71432 -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lpthread -lm 
+CMakeFiles/cmTC_71432.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `CHEEV_'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_71432.dir/build.make:89: recipe for target 'cmTC_71432' failed
+make[1]: *** [cmTC_71432] Error 1
+make[1]: Leaving directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_71432/fast' failed
+make: *** [cmTC_71432/fast] Error 2
+
+
+Determining if the function CHEEV_ exists failed with the following output:
+Change Dir: /home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_06176/fast"
+/usr/bin/make -f CMakeFiles/cmTC_06176.dir/build.make CMakeFiles/cmTC_06176.dir/build
+make[1]: Entering directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_06176.dir/CheckFunctionExists.c.o
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc   -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -o CMakeFiles/cmTC_06176.dir/CheckFunctionExists.c.o   -c /opt/ecrc/cmake/3.11.1/ub16/share/cmake-3.11/Modules/CheckFunctionExists.c
+Linking C executable cmTC_06176
+/opt/ecrc/cmake/3.11.1/ub16/bin/cmake -E cmake_link_script CMakeFiles/cmTC_06176.dir/link.txt --verbose=1
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc  -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -Wl,--no-as-needed  -rdynamic CMakeFiles/cmTC_06176.dir/CheckFunctionExists.c.o  -o cmTC_06176 -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lpthread -lm 
+CMakeFiles/cmTC_06176.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `CHEEV_'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_06176.dir/build.make:89: recipe for target 'cmTC_06176' failed
+make[1]: *** [cmTC_06176] Error 1
+make[1]: Leaving directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_06176/fast' failed
+make: *** [cmTC_06176/fast] Error 2
+
+
+Determining if the function CHEEV_ exists failed with the following output:
+Change Dir: /home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_7f787/fast"
+/usr/bin/make -f CMakeFiles/cmTC_7f787.dir/build.make CMakeFiles/cmTC_7f787.dir/build
+make[1]: Entering directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7f787.dir/CheckFunctionExists.c.o
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc   -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -o CMakeFiles/cmTC_7f787.dir/CheckFunctionExists.c.o   -c /opt/ecrc/cmake/3.11.1/ub16/share/cmake-3.11/Modules/CheckFunctionExists.c
+Linking C executable cmTC_7f787
+/opt/ecrc/cmake/3.11.1/ub16/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7f787.dir/link.txt --verbose=1
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc  -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -Wl,--no-as-needed  -rdynamic CMakeFiles/cmTC_7f787.dir/CheckFunctionExists.c.o  -o cmTC_7f787 -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lpthread -lm 
+CMakeFiles/cmTC_7f787.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `CHEEV_'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_7f787.dir/build.make:89: recipe for target 'cmTC_7f787' failed
+make[1]: *** [cmTC_7f787] Error 1
+make[1]: Leaving directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_7f787/fast' failed
+make: *** [cmTC_7f787/fast] Error 2
+
+
+Determining if the function CHEEV_ exists failed with the following output:
+Change Dir: /home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_00e7f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_00e7f.dir/build.make CMakeFiles/cmTC_00e7f.dir/build
+make[1]: Entering directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_00e7f.dir/CheckFunctionExists.c.o
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc   -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -o CMakeFiles/cmTC_00e7f.dir/CheckFunctionExists.c.o   -c /opt/ecrc/cmake/3.11.1/ub16/share/cmake-3.11/Modules/CheckFunctionExists.c
+Linking C executable cmTC_00e7f
+/opt/ecrc/cmake/3.11.1/ub16/bin/cmake -E cmake_link_script CMakeFiles/cmTC_00e7f.dir/link.txt --verbose=1
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc  -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -Wl,--no-as-needed  -rdynamic CMakeFiles/cmTC_00e7f.dir/CheckFunctionExists.c.o  -o cmTC_00e7f -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lpthread -lm 
+CMakeFiles/cmTC_00e7f.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `CHEEV_'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_00e7f.dir/build.make:89: recipe for target 'cmTC_00e7f' failed
+make[1]: *** [cmTC_00e7f] Error 1
+make[1]: Leaving directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_00e7f/fast' failed
+make: *** [cmTC_00e7f/fast] Error 2
+
+
+Determining if the function CHEEV_ exists failed with the following output:
+Change Dir: /home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_13abe/fast"
+/usr/bin/make -f CMakeFiles/cmTC_13abe.dir/build.make CMakeFiles/cmTC_13abe.dir/build
+make[1]: Entering directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_13abe.dir/CheckFunctionExists.c.o
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc   -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -o CMakeFiles/cmTC_13abe.dir/CheckFunctionExists.c.o   -c /opt/ecrc/cmake/3.11.1/ub16/share/cmake-3.11/Modules/CheckFunctionExists.c
+Linking C executable cmTC_13abe
+/opt/ecrc/cmake/3.11.1/ub16/bin/cmake -E cmake_link_script CMakeFiles/cmTC_13abe.dir/link.txt --verbose=1
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc  -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -Wl,--no-as-needed  -rdynamic CMakeFiles/cmTC_13abe.dir/CheckFunctionExists.c.o  -o cmTC_13abe -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lpthread -lm 
+CMakeFiles/cmTC_13abe.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `CHEEV_'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_13abe.dir/build.make:89: recipe for target 'cmTC_13abe' failed
+make[1]: *** [cmTC_13abe] Error 1
+make[1]: Leaving directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_13abe/fast' failed
+make: *** [cmTC_13abe/fast] Error 2
+
+
+Determining if the function CHEEV_ exists failed with the following output:
+Change Dir: /home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_9307c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_9307c.dir/build.make CMakeFiles/cmTC_9307c.dir/build
+make[1]: Entering directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9307c.dir/CheckFunctionExists.c.o
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc   -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -o CMakeFiles/cmTC_9307c.dir/CheckFunctionExists.c.o   -c /opt/ecrc/cmake/3.11.1/ub16/share/cmake-3.11/Modules/CheckFunctionExists.c
+Linking C executable cmTC_9307c
+/opt/ecrc/cmake/3.11.1/ub16/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9307c.dir/link.txt --verbose=1
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc  -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -Wl,--no-as-needed  -rdynamic CMakeFiles/cmTC_9307c.dir/CheckFunctionExists.c.o  -o cmTC_9307c -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lpthread -lm 
+CMakeFiles/cmTC_9307c.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `CHEEV_'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_9307c.dir/build.make:89: recipe for target 'cmTC_9307c' failed
+make[1]: *** [cmTC_9307c] Error 1
+make[1]: Leaving directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_9307c/fast' failed
+make: *** [cmTC_9307c/fast] Error 2
+
+
+Determining if the function CHEEV_ exists failed with the following output:
+Change Dir: /home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_3e6e0/fast"
+/usr/bin/make -f CMakeFiles/cmTC_3e6e0.dir/build.make CMakeFiles/cmTC_3e6e0.dir/build
+make[1]: Entering directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3e6e0.dir/CheckFunctionExists.c.o
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc   -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -o CMakeFiles/cmTC_3e6e0.dir/CheckFunctionExists.c.o   -c /opt/ecrc/cmake/3.11.1/ub16/share/cmake-3.11/Modules/CheckFunctionExists.c
+Linking C executable cmTC_3e6e0
+/opt/ecrc/cmake/3.11.1/ub16/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3e6e0.dir/link.txt --verbose=1
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc  -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -Wl,--no-as-needed  -rdynamic CMakeFiles/cmTC_3e6e0.dir/CheckFunctionExists.c.o  -o cmTC_3e6e0 -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lpthread -lm 
+CMakeFiles/cmTC_3e6e0.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `CHEEV_'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_3e6e0.dir/build.make:89: recipe for target 'cmTC_3e6e0' failed
+make[1]: *** [cmTC_3e6e0] Error 1
+make[1]: Leaving directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_3e6e0/fast' failed
+make: *** [cmTC_3e6e0/fast] Error 2
+
+
+Determining if the function CHEEV_ exists failed with the following output:
+Change Dir: /home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_0a883/fast"
+/usr/bin/make -f CMakeFiles/cmTC_0a883.dir/build.make CMakeFiles/cmTC_0a883.dir/build
+make[1]: Entering directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0a883.dir/CheckFunctionExists.c.o
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc   -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -o CMakeFiles/cmTC_0a883.dir/CheckFunctionExists.c.o   -c /opt/ecrc/cmake/3.11.1/ub16/share/cmake-3.11/Modules/CheckFunctionExists.c
+Linking C executable cmTC_0a883
+/opt/ecrc/cmake/3.11.1/ub16/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0a883.dir/link.txt --verbose=1
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc  -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -Wl,--no-as-needed  -rdynamic CMakeFiles/cmTC_0a883.dir/CheckFunctionExists.c.o  -o cmTC_0a883 -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lpthread -lm 
+CMakeFiles/cmTC_0a883.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `CHEEV_'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_0a883.dir/build.make:89: recipe for target 'cmTC_0a883' failed
+make[1]: *** [cmTC_0a883] Error 1
+make[1]: Leaving directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_0a883/fast' failed
+make: *** [cmTC_0a883/fast] Error 2
+
+
+Determining if the function CHEEV_ exists failed with the following output:
+Change Dir: /home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_297a6/fast"
+/usr/bin/make -f CMakeFiles/cmTC_297a6.dir/build.make CMakeFiles/cmTC_297a6.dir/build
+make[1]: Entering directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_297a6.dir/CheckFunctionExists.c.o
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc   -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -o CMakeFiles/cmTC_297a6.dir/CheckFunctionExists.c.o   -c /opt/ecrc/cmake/3.11.1/ub16/share/cmake-3.11/Modules/CheckFunctionExists.c
+Linking C executable cmTC_297a6
+/opt/ecrc/cmake/3.11.1/ub16/bin/cmake -E cmake_link_script CMakeFiles/cmTC_297a6.dir/link.txt --verbose=1
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc  -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -Wl,--no-as-needed  -rdynamic CMakeFiles/cmTC_297a6.dir/CheckFunctionExists.c.o  -o cmTC_297a6 -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lpthread -lm 
+CMakeFiles/cmTC_297a6.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `CHEEV_'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_297a6.dir/build.make:89: recipe for target 'cmTC_297a6' failed
+make[1]: *** [cmTC_297a6] Error 1
+make[1]: Leaving directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_297a6/fast' failed
+make: *** [cmTC_297a6/fast] Error 2
+
+
+Determining if the function CHEEV_ exists failed with the following output:
+Change Dir: /home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_79cf3/fast"
+/usr/bin/make -f CMakeFiles/cmTC_79cf3.dir/build.make CMakeFiles/cmTC_79cf3.dir/build
+make[1]: Entering directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_79cf3.dir/CheckFunctionExists.c.o
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc   -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -o CMakeFiles/cmTC_79cf3.dir/CheckFunctionExists.c.o   -c /opt/ecrc/cmake/3.11.1/ub16/share/cmake-3.11/Modules/CheckFunctionExists.c
+Linking C executable cmTC_79cf3
+/opt/ecrc/cmake/3.11.1/ub16/bin/cmake -E cmake_link_script CMakeFiles/cmTC_79cf3.dir/link.txt --verbose=1
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc  -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -Wl,--no-as-needed  -rdynamic CMakeFiles/cmTC_79cf3.dir/CheckFunctionExists.c.o  -o cmTC_79cf3 -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lpthread -lm 
+CMakeFiles/cmTC_79cf3.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `CHEEV_'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_79cf3.dir/build.make:89: recipe for target 'cmTC_79cf3' failed
+make[1]: *** [cmTC_79cf3] Error 1
+make[1]: Leaving directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_79cf3/fast' failed
+make: *** [cmTC_79cf3/fast] Error 2
+
+
+Determining if the function CHEEV_ exists failed with the following output:
+Change Dir: /home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_c6443/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c6443.dir/build.make CMakeFiles/cmTC_c6443.dir/build
+make[1]: Entering directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c6443.dir/CheckFunctionExists.c.o
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc   -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -o CMakeFiles/cmTC_c6443.dir/CheckFunctionExists.c.o   -c /opt/ecrc/cmake/3.11.1/ub16/share/cmake-3.11/Modules/CheckFunctionExists.c
+Linking C executable cmTC_c6443
+/opt/ecrc/cmake/3.11.1/ub16/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c6443.dir/link.txt --verbose=1
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc  -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -Wl,--no-as-needed  -rdynamic CMakeFiles/cmTC_c6443.dir/CheckFunctionExists.c.o  -o cmTC_c6443 -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lpthread -lm 
+CMakeFiles/cmTC_c6443.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `CHEEV_'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_c6443.dir/build.make:89: recipe for target 'cmTC_c6443' failed
+make[1]: *** [cmTC_c6443] Error 1
+make[1]: Leaving directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_c6443/fast' failed
+make: *** [cmTC_c6443/fast] Error 2
+
+
+Determining if the function CHEEV_ exists failed with the following output:
+Change Dir: /home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_0073f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_0073f.dir/build.make CMakeFiles/cmTC_0073f.dir/build
+make[1]: Entering directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0073f.dir/CheckFunctionExists.c.o
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc   -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -o CMakeFiles/cmTC_0073f.dir/CheckFunctionExists.c.o   -c /opt/ecrc/cmake/3.11.1/ub16/share/cmake-3.11/Modules/CheckFunctionExists.c
+Linking C executable cmTC_0073f
+/opt/ecrc/cmake/3.11.1/ub16/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0073f.dir/link.txt --verbose=1
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc  -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -Wl,--no-as-needed  -rdynamic CMakeFiles/cmTC_0073f.dir/CheckFunctionExists.c.o  -o cmTC_0073f -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lpthread -lm 
+CMakeFiles/cmTC_0073f.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `CHEEV_'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_0073f.dir/build.make:89: recipe for target 'cmTC_0073f' failed
+make[1]: *** [cmTC_0073f] Error 1
+make[1]: Leaving directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_0073f/fast' failed
+make: *** [cmTC_0073f/fast] Error 2
+
+
+Determining if the function CHEEV_ exists failed with the following output:
+Change Dir: /home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_543c9/fast"
+/usr/bin/make -f CMakeFiles/cmTC_543c9.dir/build.make CMakeFiles/cmTC_543c9.dir/build
+make[1]: Entering directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_543c9.dir/CheckFunctionExists.c.o
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc   -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -o CMakeFiles/cmTC_543c9.dir/CheckFunctionExists.c.o   -c /opt/ecrc/cmake/3.11.1/ub16/share/cmake-3.11/Modules/CheckFunctionExists.c
+Linking C executable cmTC_543c9
+/opt/ecrc/cmake/3.11.1/ub16/bin/cmake -E cmake_link_script CMakeFiles/cmTC_543c9.dir/link.txt --verbose=1
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc  -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -Wl,--no-as-needed  -rdynamic CMakeFiles/cmTC_543c9.dir/CheckFunctionExists.c.o  -o cmTC_543c9 -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lpthread -lm 
+CMakeFiles/cmTC_543c9.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `CHEEV_'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_543c9.dir/build.make:89: recipe for target 'cmTC_543c9' failed
+make[1]: *** [cmTC_543c9] Error 1
+make[1]: Leaving directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_543c9/fast' failed
+make: *** [cmTC_543c9/fast] Error 2
+
+
+Determining if the function CHEEV_ exists failed with the following output:
+Change Dir: /home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_ca4be/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ca4be.dir/build.make CMakeFiles/cmTC_ca4be.dir/build
+make[1]: Entering directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ca4be.dir/CheckFunctionExists.c.o
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc   -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -o CMakeFiles/cmTC_ca4be.dir/CheckFunctionExists.c.o   -c /opt/ecrc/cmake/3.11.1/ub16/share/cmake-3.11/Modules/CheckFunctionExists.c
+Linking C executable cmTC_ca4be
+/opt/ecrc/cmake/3.11.1/ub16/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ca4be.dir/link.txt --verbose=1
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc  -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -Wl,--no-as-needed  -rdynamic CMakeFiles/cmTC_ca4be.dir/CheckFunctionExists.c.o  -o cmTC_ca4be -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lpthread -lm 
+CMakeFiles/cmTC_ca4be.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `CHEEV_'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_ca4be.dir/build.make:89: recipe for target 'cmTC_ca4be' failed
+make[1]: *** [cmTC_ca4be] Error 1
+make[1]: Leaving directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_ca4be/fast' failed
+make: *** [cmTC_ca4be/fast] Error 2
+
+
+Determining if the function CHEEV_ exists failed with the following output:
+Change Dir: /home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_51cc6/fast"
+/usr/bin/make -f CMakeFiles/cmTC_51cc6.dir/build.make CMakeFiles/cmTC_51cc6.dir/build
+make[1]: Entering directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_51cc6.dir/CheckFunctionExists.c.o
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc   -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -o CMakeFiles/cmTC_51cc6.dir/CheckFunctionExists.c.o   -c /opt/ecrc/cmake/3.11.1/ub16/share/cmake-3.11/Modules/CheckFunctionExists.c
+Linking C executable cmTC_51cc6
+/opt/ecrc/cmake/3.11.1/ub16/bin/cmake -E cmake_link_script CMakeFiles/cmTC_51cc6.dir/link.txt --verbose=1
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc  -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -Wl,--no-as-needed  -rdynamic CMakeFiles/cmTC_51cc6.dir/CheckFunctionExists.c.o  -o cmTC_51cc6 -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lpthread -lm 
+CMakeFiles/cmTC_51cc6.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `CHEEV_'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_51cc6.dir/build.make:89: recipe for target 'cmTC_51cc6' failed
+make[1]: *** [cmTC_51cc6] Error 1
+make[1]: Leaving directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_51cc6/fast' failed
+make: *** [cmTC_51cc6/fast] Error 2
+
+
+Determining if the function CHEEV_ exists failed with the following output:
+Change Dir: /home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_937f5/fast"
+/usr/bin/make -f CMakeFiles/cmTC_937f5.dir/build.make CMakeFiles/cmTC_937f5.dir/build
+make[1]: Entering directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_937f5.dir/CheckFunctionExists.c.o
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc   -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -o CMakeFiles/cmTC_937f5.dir/CheckFunctionExists.c.o   -c /opt/ecrc/cmake/3.11.1/ub16/share/cmake-3.11/Modules/CheckFunctionExists.c
+Linking C executable cmTC_937f5
+/opt/ecrc/cmake/3.11.1/ub16/bin/cmake -E cmake_link_script CMakeFiles/cmTC_937f5.dir/link.txt --verbose=1
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc  -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -Wl,--no-as-needed  -rdynamic CMakeFiles/cmTC_937f5.dir/CheckFunctionExists.c.o  -o cmTC_937f5 -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lpthread -lm 
+CMakeFiles/cmTC_937f5.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `CHEEV_'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_937f5.dir/build.make:89: recipe for target 'cmTC_937f5' failed
+make[1]: *** [cmTC_937f5] Error 1
+make[1]: Leaving directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_937f5/fast' failed
+make: *** [cmTC_937f5/fast] Error 2
+
+
+Determining if the function CHEEV_ exists failed with the following output:
+Change Dir: /home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_12468/fast"
+/usr/bin/make -f CMakeFiles/cmTC_12468.dir/build.make CMakeFiles/cmTC_12468.dir/build
+make[1]: Entering directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_12468.dir/CheckFunctionExists.c.o
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc   -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -o CMakeFiles/cmTC_12468.dir/CheckFunctionExists.c.o   -c /opt/ecrc/cmake/3.11.1/ub16/share/cmake-3.11/Modules/CheckFunctionExists.c
+Linking C executable cmTC_12468
+/opt/ecrc/cmake/3.11.1/ub16/bin/cmake -E cmake_link_script CMakeFiles/cmTC_12468.dir/link.txt --verbose=1
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc  -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -Wl,--no-as-needed  -rdynamic CMakeFiles/cmTC_12468.dir/CheckFunctionExists.c.o  -o cmTC_12468 -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lpthread -lm 
+CMakeFiles/cmTC_12468.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `CHEEV_'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_12468.dir/build.make:89: recipe for target 'cmTC_12468' failed
+make[1]: *** [cmTC_12468] Error 1
+make[1]: Leaving directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_12468/fast' failed
+make: *** [cmTC_12468/fast] Error 2
+
+
+Determining if the function CHEEV_ exists failed with the following output:
+Change Dir: /home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_daead/fast"
+/usr/bin/make -f CMakeFiles/cmTC_daead.dir/build.make CMakeFiles/cmTC_daead.dir/build
+make[1]: Entering directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_daead.dir/CheckFunctionExists.c.o
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc   -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -o CMakeFiles/cmTC_daead.dir/CheckFunctionExists.c.o   -c /opt/ecrc/cmake/3.11.1/ub16/share/cmake-3.11/Modules/CheckFunctionExists.c
+Linking C executable cmTC_daead
+/opt/ecrc/cmake/3.11.1/ub16/bin/cmake -E cmake_link_script CMakeFiles/cmTC_daead.dir/link.txt --verbose=1
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc  -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -Wl,--no-as-needed  -rdynamic CMakeFiles/cmTC_daead.dir/CheckFunctionExists.c.o  -o cmTC_daead -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lpthread -lm 
+CMakeFiles/cmTC_daead.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `CHEEV_'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_daead.dir/build.make:89: recipe for target 'cmTC_daead' failed
+make[1]: *** [cmTC_daead] Error 1
+make[1]: Leaving directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_daead/fast' failed
+make: *** [cmTC_daead/fast] Error 2
+
+
+Determining if the function CHEEV_ exists failed with the following output:
+Change Dir: /home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_56b2c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_56b2c.dir/build.make CMakeFiles/cmTC_56b2c.dir/build
+make[1]: Entering directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_56b2c.dir/CheckFunctionExists.c.o
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc   -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -o CMakeFiles/cmTC_56b2c.dir/CheckFunctionExists.c.o   -c /opt/ecrc/cmake/3.11.1/ub16/share/cmake-3.11/Modules/CheckFunctionExists.c
+Linking C executable cmTC_56b2c
+/opt/ecrc/cmake/3.11.1/ub16/bin/cmake -E cmake_link_script CMakeFiles/cmTC_56b2c.dir/link.txt --verbose=1
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc  -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -Wl,--no-as-needed  -rdynamic CMakeFiles/cmTC_56b2c.dir/CheckFunctionExists.c.o  -o cmTC_56b2c -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lpthread -lm 
+CMakeFiles/cmTC_56b2c.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `CHEEV_'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_56b2c.dir/build.make:89: recipe for target 'cmTC_56b2c' failed
+make[1]: *** [cmTC_56b2c] Error 1
+make[1]: Leaving directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_56b2c/fast' failed
+make: *** [cmTC_56b2c/fast] Error 2
+
+
+Determining if the function CHEEV_ exists failed with the following output:
+Change Dir: /home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_8e0de/fast"
+/usr/bin/make -f CMakeFiles/cmTC_8e0de.dir/build.make CMakeFiles/cmTC_8e0de.dir/build
+make[1]: Entering directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8e0de.dir/CheckFunctionExists.c.o
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc   -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -o CMakeFiles/cmTC_8e0de.dir/CheckFunctionExists.c.o   -c /opt/ecrc/cmake/3.11.1/ub16/share/cmake-3.11/Modules/CheckFunctionExists.c
+Linking C executable cmTC_8e0de
+/opt/ecrc/cmake/3.11.1/ub16/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8e0de.dir/link.txt --verbose=1
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc  -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -Wl,--no-as-needed  -rdynamic CMakeFiles/cmTC_8e0de.dir/CheckFunctionExists.c.o  -o cmTC_8e0de -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lpthread -lm 
+CMakeFiles/cmTC_8e0de.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `CHEEV_'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_8e0de.dir/build.make:89: recipe for target 'cmTC_8e0de' failed
+make[1]: *** [cmTC_8e0de] Error 1
+make[1]: Leaving directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_8e0de/fast' failed
+make: *** [cmTC_8e0de/fast] Error 2
+
+
+Determining if the function CHEEV_ exists failed with the following output:
+Change Dir: /home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_25552/fast"
+make[1]: Entering directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_25552.dir/build.make CMakeFiles/cmTC_25552.dir/build
+make[2]: Entering directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_25552.dir/CheckFunctionExists.c.o
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc   -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -o CMakeFiles/cmTC_25552.dir/CheckFunctionExists.c.o   -c /opt/ecrc/cmake/3.11.1/ub16/share/cmake-3.11/Modules/CheckFunctionExists.c
+Linking C executable cmTC_25552
+/opt/ecrc/cmake/3.11.1/ub16/bin/cmake -E cmake_link_script CMakeFiles/cmTC_25552.dir/link.txt --verbose=1
+/opt/ecrc/gcc/7.2.0/ub16/bin/gcc  -DCHECK_FUNCTION_EXISTS=CHEEV_ -fopenmp   -Wl,--no-as-needed  -rdynamic CMakeFiles/cmTC_25552.dir/CheckFunctionExists.c.o  -o cmTC_25552 -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lpthread -lm 
+CMakeFiles/cmTC_25552.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `CHEEV_'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_25552.dir/build.make:89: recipe for target 'cmTC_25552' failed
+make[2]: *** [cmTC_25552] Error 1
+make[2]: Leaving directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_25552/fast' failed
+make[1]: *** [cmTC_25552/fast] Error 2
+make[1]: Leaving directory '/home/abdullsm/develop/stars-h/build/CMakeFiles/CMakeTmp'
+
+

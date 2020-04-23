@@ -1,0 +1,36 @@
+
+Configuration of STARS-H 0.1.1:
+        Compiler: C .........: /opt/ecrc/gcc/7.2.0/ub16/bin/gcc  (GNU)
+        Linker: .............: /usr/bin/ld
+ 
+        Build type ..........: 
+        Build shared ........: 
+        CFlags ..............: 
+        LDFlags (shared lib).: 
+        LDFlags (static lib).: 
+        LDFlags (executable).:  -Wl,--no-as-needed -Wl,--no-as-needed
+ 
+        Implementation paradigm
+        MPI .................: OFF
+ 
+        Runtime specific
+        StarPU ..............: ON /home/abdullsm/codes/starpu-1.2.5/starpu_install
+ 
+        Kernels specific
+        BLAS ................: Intel MKL [/opt/ecrc/mkl/2018-update-1/mkl/lib/intel64/libmkl_intel_lp64.so /opt/ecrc/mkl/2018-update-1/mkl/lib/intel64/libmkl_sequential.so /opt/ecrc/mkl/2018-update-1/mkl/lib/intel64/libmkl_core.so -lpthread -lm]
+        LAPACK...............: Intel MKL [/opt/ecrc/mkl/2018-update-1/mkl/lib/intel64/libmkl_intel_lp64.so /opt/ecrc/mkl/2018-update-1/mkl/lib/intel64/libmkl_sequential.so /opt/ecrc/mkl/2018-update-1/mkl/lib/intel64/libmkl_core.so -lpthread -lm]
+ 
+        Other
+        GSL .................: ON [/opt/ecrc/gsl/2.4-gcc-7.2.0/ub16/lib/libgsl.so /opt/ecrc/gsl/2.4-gcc-7.2.0/ub16/lib/libgslcblas.so]
+ 
+        Binaries to build
+        documentation .......: FULL
+        examples ............: ON
+        testing .............: ON
+ 
+        STARSH dependencies .:
+ 
+        Definitions: OPENMP STARPU GSL CBLAS_HAS_ZGEMM3M CBLAS_HAS_CGEMM3M MKL
+ 
+        INSTALL_PREFIX ......: /home/abdullsm/develop/stars-h/build/install_dir
+
